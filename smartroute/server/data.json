@@ -1,0 +1,238 @@
+{
+    "ecoles": [
+        {
+            "id": 1,
+            "nom": "École Primaire Jean Jaurès",
+            "adresse": "123 Rue de l'École, Clermont-Ferrand",
+            "capacite": 300,
+            "classes": [
+                {
+                    "nom": "CP",
+                    "niveau": "Cours Préparatoire",
+                    "professeurs": [
+                        {
+                            "id": 1,
+                            "nom": "Mme Dupont",
+                            "specialite": "Éducation de la petite enfance"
+                        },
+                        {
+                            "id": 2,
+                            "nom": "M. Martin",
+                            "specialite": "Arts plastiques"
+                        }
+                    ]
+                },
+                {
+                    "nom": "CE1",
+                    "niveau": "Cours Élémentaire 1",
+                    "professeurs": [
+                        {
+                            "id": 3,
+                            "nom": "Mme Leblanc",
+                            "specialite": "Mathématiques"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nom": "Collège Pierre et Marie Curie",
+            "adresse": "456 Avenue de la République, Clermont-Ferrand",
+            "capacite": 500,
+            "classes": [
+                {
+                    "nom": "6ème",
+                    "niveau": "Sixième",
+                    "professeurs": [
+                        {
+                            "id": 4,
+                            "nom": "M. Simon",
+                            "specialite": "Histoire-Géographie"
+                        },
+                        {
+                            "id": 5,
+                            "nom": "Mme Leroy",
+                            "specialite": "Sciences"
+                        }
+                    ]
+                },
+                {
+                    "nom": "5ème",
+                    "niveau": "Cinquième",
+                    "professeurs": [
+                        {
+                            "id": 6,
+                            "nom": "M. Durand",
+                            "specialite": "Mathématiques"
+                        },
+                        {
+                            "id": 7,
+                            "nom": "Mme Petit",
+                            "specialite": "Français"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nom": "Lycée Général et Technologique Blaise Pascal",
+            "adresse": "789 Boulevard des États-Unis, Clermont-Ferrand",
+            "capacite": 600,
+            "classes": [
+                {
+                    "nom": "Terminale S",
+                    "niveau": "Terminale Scientifique",
+                    "professeurs": [
+                        {
+                            "id": 8,
+                            "nom": "M. Fontaine",
+                            "specialite": "Physique"
+                        },
+                        {
+                            "id": 9,
+                            "nom": "Mme Renaud",
+                            "specialite": "Chimie"
+                        }
+                    ]
+                },
+                {
+                    "nom": "Première ES",
+                    "niveau": "Première Économique et Sociale",
+                    "professeurs": [
+                        {
+                            "id": 10,
+                            "nom": "M. Giraud",
+                            "specialite": "Économie"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "nom": "École Maternelle Les Petits Explorateurs",
+            "adresse": "234 Chemin des Fleurs, Clermont-Ferrand",
+            "capacite": 150,
+            "classes": [
+                {
+                    "nom": "Petite Section",
+                    "niveau": "Maternelle 1",
+                    "professeurs": [
+                        {
+                            "id": 11,
+                            "nom": "Mme Bernard",
+                            "specialite": "Éducation de la petite enfance"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "nom": "École Primaire Marie Curie",
+            "adresse": "567 Rue des Écoles, Clermont-Ferrand",
+            "capacite": 350,
+            "classes": [
+                {
+                    "nom": "CM2",
+                    "niveau": "Cours Moyen 2",
+                    "professeurs": [
+                        {
+                            "id": 12,
+                            "nom": "M. Moreau",
+                            "specialite": "Mathématiques"
+                        },
+                        {
+                            "id": 13,
+                            "nom": "Mme Lambert",
+                            "specialite": "Histoire-Géographie"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "nom": "Collège François Rabelais",
+            "adresse": "101 Rue de la République, Clermont-Ferrand",
+            "capacite": 450,
+            "classes": [
+                {
+                    "nom": "4ème",
+                    "niveau": "Quatrième",
+                    "professeurs": [
+                        {
+                            "id": 14,
+                            "nom": "Mme Lefevre",
+                            "specialite": "Langues"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "evenements": [
+        {
+            "id": 1,
+            "nom": "Festival de Musique",
+            "date": "2024-07-15",
+            "lieu": "Parc des Sports, Clermont-Ferrand"
+        },
+        {
+            "id": 2,
+            "nom": "Marché de Noël",
+            "date": "2024-12-01",
+            "lieu": "Place de Jaude, Clermont-Ferrand"
+        },
+        {
+            "id": 3,
+            "nom": "Fête de la Science",
+            "date": "2024-10-10",
+            "lieu": "Cité des Sciences, Clermont-Ferrand"
+        },
+        {
+            "id": 4,
+            "nom": "Concert de Printemps",
+            "date": "2024-04-20",
+            "lieu": "Auditorium Pierre Boulez, Clermont-Ferrand"
+        },
+        {
+            "id": 5,
+            "nom": "Festival de Gastronomie",
+            "date": "2024-05-15",
+            "lieu": "Parc de la Linde, Clermont-Ferrand"
+        },
+        {
+            "id": 6,
+            "nom": "Exposition d'Art Contemporain",
+            "date": "2024-08-05",
+            "lieu": "Musée d'Art Roger Quilliot, Clermont-Ferrand"
+        },
+        {
+            "nom": "new event",
+            "date": "2025-11-03",
+            "lieu": "133 bd lafayette",
+            "id": 7
+        },
+        {
+            "nom": "a",
+            "date": "2025-02-02",
+            "lieu": "qefqwefqwefw",
+            "id": 8
+        },
+        {
+            "nom": "fjghbh",
+            "date": "2025-02-02",
+            "lieu": "fegeg",
+            "id": 9
+        },
+        {
+            "nom": "bjhd f",
+            "date": "0025-02-02",
+            "lieu": "dfdgwg",
+            "id": 10
+        }
+    ]
+}
