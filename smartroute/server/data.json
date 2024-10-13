@@ -173,66 +173,1320 @@
             ]
         }
     ],
-    "evenements": [
-        {
-            "id": 1,
-            "nom": "Festival de Musique",
-            "date": "2024-07-15",
-            "lieu": "Parc des Sports, Clermont-Ferrand"
+"evenements": [
+  {
+    "id": 1,
+    "nom": "Festival de Musique",
+    "date": "2024-07-15",
+    "lieu": "Parc des Sports, Clermont-Ferrand",
+    "theme": "Musique",
+    "description": "Un festival annuel de musique avec des artistes locaux et internationaux.",
+    "organisateur": "Association Musique Clermont",
+    "prix": 25,
+    "age_min": 12,
+    "contact": "contact@musiqueclermont.com",
+    "site_web": "https://musiqueclermont.com",
+    "capacite": 5000,
+    "photo": "https://example.com/festival-musique.jpg",
+    "type": "Payant",
+    "tags": ["musique", "festival", "concert"]
+  },
+  {
+    "id": 2,
+    "nom": "Marché de Noël",
+    "date": "2024-12-01",
+    "lieu": "Place de Jaude, Clermont-Ferrand",
+    "theme": "Fête",
+    "description": "Un marché de Noël avec des artisans locaux, de la nourriture et des activités pour toute la famille.",
+    "organisateur": "Mairie de Clermont-Ferrand",
+    "prix": 0,
+    "age_min": 0,
+    "contact": "info@mairie-clermont.fr",
+    "site_web": "https://mairie-clermont.fr",
+    "capacite": 20000,
+    "photo": "https://example.com/marche-noel.jpg",
+    "type": "Gratuit",
+    "tags": ["noël", "marché", "artisanat"]
+  },
+  {
+    "id": 3,
+    "nom": "Fête de la Science",
+    "date": "2024-10-10",
+    "lieu": "Cité des Sciences, Clermont-Ferrand",
+    "theme": "Éducation",
+    "description": "Un événement éducatif pour sensibiliser les jeunes à la science et à la technologie.",
+    "organisateur": "Cité des Sciences",
+    "prix": 0,
+    "age_min": 6,
+    "contact": "contact@citedessciences.fr",
+    "site_web": "https://citedessciences.fr",
+    "capacite": 1500,
+    "photo": "https://example.com/fete-science.jpg",
+    "type": "Gratuit",
+    "tags": ["science", "éducation", "famille"]
+  },
+  {
+    "id": 4,
+    "nom": "Concert de Printemps",
+    "date": "2024-04-20",
+    "lieu": "Auditorium Pierre Boulez, Clermont-Ferrand",
+    "theme": "Musique",
+    "description": "Un concert de musique classique pour célébrer le printemps.",
+    "organisateur": "Orchestre de Clermont",
+    "prix": 15,
+    "age_min": 0,
+    "contact": "contact@orchestre-clermont.com",
+    "site_web": "https://orchestre-clermont.com",
+    "capacite": 800,
+    "photo": "https://example.com/concert-printemps.jpg",
+    "type": "Payant",
+    "tags": ["musique", "classique", "concert"]
+  },
+  {
+    "id": 5,
+    "nom": "Festival de Gastronomie",
+    "date": "2024-05-15",
+    "lieu": "Parc de la Linde, Clermont-Ferrand",
+    "theme": "Gastronomie",
+    "description": "Un festival mettant en avant la gastronomie locale avec des démonstrations de chefs.",
+    "organisateur": "Association Gastronomie Clermont",
+    "prix": 10,
+    "age_min": 0,
+    "contact": "info@gastronomieclermont.fr",
+    "site_web": "https://gastronomieclermont.fr",
+    "capacite": 3000,
+    "photo": "https://example.com/festival-gastronomie.jpg",
+    "type": "Payant",
+    "tags": ["gastronomie", "festival", "culinaire"]
+  },
+  {
+    "id": 6,
+    "nom": "Exposition d'Art Contemporain",
+    "date": "2024-08-05",
+    "lieu": "Musée d'Art Roger Quilliot, Clermont-Ferrand",
+    "theme": "Art",
+    "description": "Une exposition présentant les œuvres d'artistes contemporains.",
+    "organisateur": "Musée d'Art Roger Quilliot",
+    "prix": 5,
+    "age_min": 0,
+    "contact": "contact@artrogerquilliot.fr",
+    "site_web": "https://artrogerquilliot.fr",
+    "capacite": 1000,
+    "photo": "https://example.com/exposition-art.jpg",
+    "type": "Payant",
+    "tags": ["art", "exposition", "culture"]
+  },
+  {
+    "id": 7,
+    "nom": "Nouvel An",
+    "date": "2025-01-01",
+    "lieu": "Place de Jaude, Clermont-Ferrand",
+    "theme": "Célébration",
+    "description": "Célébration du Nouvel An avec des feux d'artifice et des concerts.",
+    "organisateur": "Mairie de Clermont-Ferrand",
+    "prix": 0,
+    "age_min": 0,
+    "contact": "info@mairie-clermont.fr",
+    "site_web": "https://mairie-clermont.fr",
+    "capacite": 30000,
+    "photo": "https://example.com/nouvel-an.jpg",
+    "type": "Gratuit",
+    "tags": ["célébration", "nouvel an", "festivité"]
+  },
+  {
+    "id": 8,
+    "nom": "Festival International de Documentaire",
+    "date": "2025-04-12",
+    "lieu": "Cinéma Le Rio, Clermont-Ferrand",
+    "theme": "Cinéma",
+    "description": "Projection de documentaires du monde entier suivie de discussions.",
+    "organisateur": "Festival de Documentaire",
+    "prix": 10,
+    "age_min": 0,
+    "contact": "info@festivaldocumentaire.com",
+    "site_web": "https://festivaldocumentaire.com",
+    "capacite": 1200,
+    "photo": "https://example.com/festival-documentaire.jpg",
+    "type": "Payant",
+    "tags": ["cinéma", "documentaire", "culture"]
+  },
+  {
+    "id": 9,
+    "nom": "Salon des Métiers d'Art",
+    "date": "2025-03-10",
+    "lieu": "Palais des Congrès, Clermont-Ferrand",
+    "theme": "Artisanat",
+    "description": "Salon mettant en avant les artisans et leurs créations.",
+    "organisateur": "Chambre des Métiers",
+    "prix": 5,
+    "age_min": 0,
+    "contact": "contact@chambredesmetiers.fr",
+    "site_web": "https://chambredesmetiers.fr",
+    "capacite": 1500,
+    "photo": "https://example.com/salon-artisanat.jpg",
+    "type": "Payant",
+    "tags": ["artisanat", "salon", "marché"]
+  },
+  {
+    "id": 10,
+    "nom": "Fête des Vins de Clermont",
+    "date": "2025-06-05",
+    "lieu": "Parc des Expositions, Clermont-Ferrand",
+    "theme": "Gastronomie",
+    "description": "Dégustation des meilleurs vins locaux accompagnée de mets.",
+    "organisateur": "Vins de Clermont",
+    "prix": 15,
+    "age_min": 18,
+    "contact": "info@vinsdeclermont.fr",
+    "site_web": "https://vinsdeclermont.fr",
+    "capacite": 2000,
+    "photo": "https://example.com/fete-vins.jpg",
+    "type": "Payant",
+    "tags": ["vin", "gastronomie", "dégustation"]
+  },
+  {
+    "id": 11,
+    "nom": "Festival de Jazz",
+    "date": "2025-07-20",
+    "lieu": "Place de la Victoire, Clermont-Ferrand",
+    "theme": "Musique",
+    "description": "Un festival de jazz avec des concerts en plein air.",
+    "organisateur": "Jazz en Clermont",
+    "prix": 20,
+    "age_min": 0,
+    "contact": "contact@jazzenclermont.com",
+    "site_web": "https://jazzenclermont.com",
+    "capacite": 3000,
+    "photo": "https://example.com/festival-jazz.jpg",
+    "type": "Payant",
+    "tags": ["jazz", "musique", "festival"]
+  },
+  {
+    "id": 12,
+    "nom": "Exposition de Peinture",
+    "date": "2025-08-15",
+    "lieu": "Musée Bargoin, Clermont-Ferrand",
+    "theme": "Art",
+    "description": "Exposition d'œuvres de peintres contemporains.",
+    "organisateur": "Musée Bargoin",
+    "prix": 5,
+    "age_min": 0,
+    "contact": "contact@bargoin.fr",
+    "site_web": "https://bargoin.fr",
+    "capacite": 800,
+    "photo": "https://example.com/exposition-peinture.jpg",
+    "type": "Payant",
+    "tags": ["art", "exposition", "culture"]
+  },
+  {
+    "id": 13,
+    "nom": "Journées du Patrimoine",
+    "date": "2025-09-20",
+    "lieu": "Différents sites, Clermont-Ferrand",
+    "theme": "Culture",
+    "description": "Découverte des patrimoines cachés de la ville.",
+    "organisateur": "Ville de Clermont-Ferrand",
+    "prix": 0,
+    "age_min": 0,
+    "contact": "info@patrimoine-clermont.fr",
+    "site_web": "https://patrimoine-clermont.fr",
+    "capacite": 5000,
+    "photo": "https://example.com/journees-patrimoine.jpg",
+    "type": "Gratuit",
+    "tags": ["patrimoine", "culture", "visite"]
+  },
+  {
+    "id": 14,
+    "nom": "Concours de Cuisine",
+    "date": "2025-10-15",
+    "lieu": "Centre Culturel, Clermont-Ferrand",
+    "theme": "Gastronomie",
+    "description": "Concours ouvert à tous les amateurs de cuisine.",
+    "organisateur": "Centre Culturel de Clermont",
+    "prix": 10,
+    "age_min": 16,
+    "contact": "info@centreculturel.fr",
+    "site_web": "https://centreculturel.fr",
+    "capacite": 200,
+    "photo": "https://example.com/concours-cuisine.jpg",
+    "type": "Payant",
+    "tags": ["cuisine", "concours", "gastronomie"]
+  },
+  {
+    "id": 15,
+    "nom": "Festival de Théâtre",
+    "date": "2025-11-11",
+    "lieu": "Théâtre de Clermont, Clermont-Ferrand",
+    "theme": "Théâtre",
+    "description": "Un festival de théâtre avec des représentations de troupes locales.",
+    "organisateur": "Théâtre de Clermont",
+    "prix": 12,
+    "age_min": 0,
+    "contact": "contact@theatre-clermont.fr",
+    "site_web": "https://theatre-clermont.fr",
+    "capacite": 1000,
+    "photo": "https://example.com/festival-theatre.jpg",
+    "type": "Payant",
+    "tags": ["théâtre", "festival", "culture"]
+  },
+  {
+    "id": 16,
+    "nom": "Fête de la Musique",
+    "date": "2025-06-21",
+    "lieu": "Centre-ville, Clermont-Ferrand",
+    "theme": "Musique",
+    "description": "Célébration de la musique avec des concerts dans la rue.",
+    "organisateur": "Mairie de Clermont-Ferrand",
+    "prix": 0,
+    "age_min": 0,
+    "contact": "info@mairie-clermont.fr",
+    "site_web": "https://mairie-clermont.fr",
+    "capacite": 10000,
+    "photo": "https://example.com/fete-musique.jpg",
+    "type": "Gratuit",
+    "tags": ["musique", "célébration", "festival"]
+  },
+  {
+    "id": 17,
+    "nom": "Festival des Arts de la Rue",
+    "date": "2025-07-28",
+    "lieu": "Rue des Arts, Clermont-Ferrand",
+    "theme": "Art",
+    "description": "Un festival qui met en avant les performances artistiques en plein air.",
+    "organisateur": "Association Arts de la Rue",
+    "prix": 0,
+    "age_min": 0,
+    "contact": "contact@artsdelarue.fr",
+    "site_web": "https://artsdelarue.fr",
+    "capacite": 5000,
+    "photo": "https://example.com/festival-arts-rue.jpg",
+    "type": "Gratuit",
+    "tags": ["art", "performance", "festival"]
+  },
+  {
+    "id": 18,
+    "nom": "Rencontres de l'Audiovisuel",
+    "date": "2025-09-05",
+    "lieu": "Médiathèque, Clermont-Ferrand",
+    "theme": "Audiovisuel",
+    "description": "Rencontres et projections autour des métiers de l'audiovisuel.",
+    "organisateur": "Médiathèque de Clermont",
+    "prix": 5,
+    "age_min": 0,
+    "contact": "contact@mediatheque-clermont.fr",
+    "site_web": "https://mediatheque-clermont.fr",
+    "capacite": 300,
+    "photo": "https://example.com/rencontres-audiovisuel.jpg",
+    "type": "Payant",
+    "tags": ["audiovisuel", "rencontre", "culture"]
+  },
+  {
+    "id": 19,
+    "nom": "Fête du Chocolat",
+    "date": "2025-10-10",
+    "lieu": "Parc de la Linde, Clermont-Ferrand",
+    "theme": "Gastronomie",
+    "description": "Une célébration dédiée au chocolat avec des dégustations et des ateliers.",
+    "organisateur": "Association Chocolatiers",
+    "prix": 10,
+    "age_min": 0,
+    "contact": "contact@chocolatiers.fr",
+    "site_web": "https://chocolatiers.fr",
+    "capacite": 1500,
+    "photo": "https://example.com/fete-chocolat.jpg",
+    "type": "Payant",
+    "tags": ["chocolat", "gastronomie", "festival"]
+  },
+  {
+    "id": 20,
+    "nom": "Marché des Producteurs",
+    "date": "2025-11-25",
+    "lieu": "Place de Jaude, Clermont-Ferrand",
+    "theme": "Marché",
+    "description": "Un marché mettant en avant les produits locaux.",
+    "organisateur": "Association des Producteurs",
+    "prix": 0,
+    "age_min": 0,
+    "contact": "contact@producteurs.fr",
+    "site_web": "https://producteurs.fr",
+    "capacite": 10000,
+    "photo": "https://example.com/marche-producteurs.jpg",
+    "type": "Gratuit",
+    "tags": ["marché", "produits locaux", "gastronomie"]
+  },
+  {
+    "id": 21,
+    "nom": "Semaine du Goût",
+    "date": "2025-10-10",
+    "lieu": "Différents restaurants, Clermont-Ferrand",
+    "theme": "Gastronomie",
+    "description": "Une semaine dédiée à la gastronomie avec des plats spéciaux dans les restaurants.",
+    "organisateur": "Restaurants de Clermont",
+    "prix": 0,
+    "age_min": 0,
+    "contact": "info@restaurants-clermont.fr",
+    "site_web": "https://restaurants-clermont.fr",
+    "capacite": 5000,
+    "photo": "https://example.com/semaine-gout.jpg",
+    "type": "Gratuit",
+    "tags": ["gastronomie", "restaurant", "dégustation"]
+  },
+  {
+    "id": 22,
+    "nom": "Festival de Danse",
+    "date": "2025-09-15",
+    "lieu": "Théâtre de Clermont, Clermont-Ferrand",
+    "theme": "Danse",
+    "description": "Un festival présentant des compagnies de danse locales et internationales.",
+    "organisateur": "Théâtre de Clermont",
+    "prix": 10,
+    "age_min": 0,
+    "contact": "contact@theatre-clermont.fr",
+    "site_web": "https://theatre-clermont.fr",
+    "capacite": 800,
+    "photo": "https://example.com/festival-danse.jpg",
+    "type": "Payant",
+    "tags": ["danse", "festival", "culture"]
+    },
+    {
+      "id": 23,
+      "nom": "Concert de Noël",
+      "date": "2025-12-20",
+      "lieu": "Auditorium Pierre Boulez, Clermont-Ferrand",
+      "theme": "Musique",
+      "description": "Un concert de Noël avec des chorales et des musiciens locaux.",
+      "organisateur": "Orchestre de Clermont",
+      "prix": 15,
+      "age_min": 0,
+      "contact": "info@orchestre-clermont.fr",
+      "site_web": "https://orchestre-clermont.fr",
+      "capacite": 1200,
+      "photo": "https://example.com/concert-noel.jpg",
+      "type": "Payant",
+      "tags": ["musique", "noël", "concert"]
+    },
+    {
+      "id": 24,
+      "nom": "Brocante de Clermont",
+      "date": "2025-05-01",
+      "lieu": "Centre-ville, Clermont-Ferrand",
+      "theme": "Brocante",
+      "description": "Un grand marché aux puces avec des antiquités et des objets vintage.",
+      "organisateur": "Association des Brocanteurs",
+      "prix": 0,
+      "age_min": 0,
+      "contact": "contact@brocanteurs.fr",
+      "site_web": "https://brocanteurs.fr",
+      "capacite": 5000,
+      "photo": "https://example.com/brocante.jpg",
+      "type": "Gratuit",
+      "tags": ["brocante", "marché", "vintage"]
+    },
+    {
+      "id": 25,
+      "nom": "Journée du Véhicule Électrique",
+      "date": "2025-04-22",
+      "lieu": "Place de Jaude, Clermont-Ferrand",
+      "theme": "Environnement",
+      "description": "Un événement pour découvrir les véhicules électriques et leur impact environnemental.",
+      "organisateur": "Ville de Clermont-Ferrand",
+      "prix": 0,
+      "age_min": 0,
+      "contact": "info@ville-clermont.fr",
+      "site_web": "https://ville-clermont.fr",
+      "capacite": 3000,
+      "photo": "https://example.com/journee-vehicule-electrique.jpg",
+      "type": "Gratuit",
+      "tags": ["environnement", "véhicules", "énergie"]
+    },
+    {
+      "id": 26,
+      "nom": "Festival des Jeux Vidéo",
+      "date": "2025-08-28",
+      "lieu": "Parc des Expositions, Clermont-Ferrand",
+      "theme": "Loisirs",
+      "description": "Un festival dédié aux passionnés de jeux vidéo avec des compétitions et des conférences.",
+      "organisateur": "Association Clermont Gaming",
+      "prix": 10,
+      "age_min": 10,
+      "contact": "info@clermontgaming.fr",
+      "site_web": "https://clermontgaming.fr",
+      "capacite": 2000,
+      "photo": "https://example.com/festival-jeux-video.jpg",
+      "type": "Payant",
+      "tags": ["jeux vidéo", "festival", "compétition"]
+    },
+    {
+      "id": 27,
+      "nom": "Concours de Photographie",
+      "date": "2025-09-10",
+      "lieu": "Musée d'Art Roger Quilliot, Clermont-Ferrand",
+      "theme": "Art",
+      "description": "Un concours ouvert à tous les photographes, amateurs ou professionnels.",
+      "organisateur": "Musée d'Art Roger Quilliot",
+      "prix": 5,
+      "age_min": 0,
+      "contact": "info@artrogerquilliot.fr",
+      "site_web": "https://artrogerquilliot.fr",
+      "capacite": 300,
+      "photo": "https://example.com/concours-photographie.jpg",
+      "type": "Payant",
+      "tags": ["photographie", "concours", "art"]
+    },
+    {
+      "id": 28,
+      "nom": "Fête de la Nature",
+      "date": "2025-05-10",
+      "lieu": "Parc de la Linde, Clermont-Ferrand",
+      "theme": "Nature",
+      "description": "Une journée dédiée à la découverte de la nature avec des ateliers et des balades.",
+      "organisateur": "Association Nature et Environnement",
+      "prix": 0,
+      "age_min": 0,
+      "contact": "contact@natureenvironnement.fr",
+      "site_web": "https://natureenvironnement.fr",
+      "capacite": 1000,
+      "photo": "https://example.com/fete-nature.jpg",
+      "type": "Gratuit",
+      "tags": ["nature", "environnement", "ateliers"]
+    },
+    {
+      "id": 29,
+      "nom": "Salon du Livre",
+      "date": "2025-10-05",
+      "lieu": "Palais des Congrès, Clermont-Ferrand",
+      "theme": "Culture",
+      "description": "Un salon littéraire avec des auteurs, des éditeurs et des conférences.",
+      "organisateur": "Association des Écrivains",
+      "prix": 5,
+      "age_min": 0,
+      "contact": "contact@salonlivre.fr",
+      "site_web": "https://salonlivre.fr",
+      "capacite": 2000,
+      "photo": "https://example.com/salon-livre.jpg",
+      "type": "Payant",
+      "tags": ["livre", "littérature", "culture"]
+    },
+    {
+      "id": 30,
+      "nom": "Festival de l'Humour",
+      "date": "2025-11-15",
+      "lieu": "Théâtre de Clermont, Clermont-Ferrand",
+      "theme": "Humour",
+      "description": "Un festival qui met en avant les comédiens locaux et nationaux.",
+      "organisateur": "Théâtre de Clermont",
+      "prix": 12,
+      "age_min": 0,
+      "contact": "contact@theatre-clermont.fr",
+      "site_web": "https://theatre-clermont.fr",
+      "capacite": 800,
+      "photo": "https://example.com/festival-humour.jpg",
+      "type": "Payant",
+      "tags": ["humour", "festival", "comédie"]
+    }
+  ],
+
+    "users": [
+      {
+        "id": 1,
+        "nom": "Alice Dupont",
+        "age": 25,
+        "adresse": {
+          "rue": "12 rue de la Paix",
+          "ville": "Paris",
+          "code_postal": "75002"
         },
-        {
-            "id": 2,
-            "nom": "Marché de Noël",
-            "date": "2024-12-01",
-            "lieu": "Place de Jaude, Clermont-Ferrand"
+        "gouts_musicals": ["rock", "pop"],
+        "interets": ["concerts", "expositions", "voyages"],
+        "historique_evenements": [
+          { "id_evenement": 101, "nom_evenement": "Concert de Rock", "date": "2023-06-15" },
+          { "id_evenement": 103, "nom_evenement": "Exposition d'Art", "date": "2023-07-20" }
+        ],
+        "bio": "Amatrice de rock et de pop, Alice adore découvrir de nouveaux concerts.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 2,
+        "nom": "Marc Lefevre",
+        "age": 30,
+        "adresse": {
+          "rue": "34 avenue des Champs-Élysées",
+          "ville": "Lyon",
+          "code_postal": "69001"
         },
-        {
-            "id": 3,
-            "nom": "Fête de la Science",
-            "date": "2024-10-10",
-            "lieu": "Cité des Sciences, Clermont-Ferrand"
+        "gouts_musicals": ["jazz", "classique"],
+        "interets": ["théâtre", "musique"],
+        "historique_evenements": [
+          { "id_evenement": 102, "nom_evenement": "Concert Jazz", "date": "2023-05-10" }
+        ],
+        "bio": "Marc est passionné par le jazz et apprécie les spectacles de théâtre.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 3,
+        "nom": "Sophie Martin",
+        "age": 22,
+        "adresse": {
+          "rue": "45 boulevard Saint-Germain",
+          "ville": "Marseille",
+          "code_postal": "13005"
         },
-        {
-            "id": 4,
-            "nom": "Concert de Printemps",
-            "date": "2024-04-20",
-            "lieu": "Auditorium Pierre Boulez, Clermont-Ferrand"
+        "gouts_musicals": ["électro", "rap"],
+        "interets": ["festivals", "sorties entre amis"],
+        "historique_evenements": [],
+        "bio": "Sophie aime les festivals de musique électro et les soirées entre amis.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 4,
+        "nom": "Jean Dupuis",
+        "age": 28,
+        "adresse": {
+          "rue": "78 rue de la Liberté",
+          "ville": "Bordeaux",
+          "code_postal": "33000"
         },
-        {
-            "id": 5,
-            "nom": "Festival de Gastronomie",
-            "date": "2024-05-15",
-            "lieu": "Parc de la Linde, Clermont-Ferrand"
+        "gouts_musicals": ["pop", "rock"],
+        "interets": ["concerts", "sports"],
+        "historique_evenements": [
+          { "id_evenement": 101, "nom_evenement": "Concert de Rock", "date": "2023-06-15" },
+          { "id_evenement": 104, "nom_evenement": "Match de Football", "date": "2023-09-01" }
+        ],
+        "bio": "Jean est un grand fan de concerts et adore le sport.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 5,
+        "nom": "Clara Roux",
+        "age": 24,
+        "adresse": {
+          "rue": "9 rue des Fleurs",
+          "ville": "Toulouse",
+          "code_postal": "31000"
         },
-        {
-            "id": 6,
-            "nom": "Exposition d'Art Contemporain",
-            "date": "2024-08-05",
-            "lieu": "Musée d'Art Roger Quilliot, Clermont-Ferrand"
+        "gouts_musicals": ["folk", "jazz"],
+        "interets": ["culture", "musique"],
+        "historique_evenements": [],
+        "bio": "Clara apprécie la musique folk et aime explorer la culture locale.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 6,
+        "nom": "Pierre Bernard",
+        "age": 35,
+        "adresse": {
+          "rue": "123 rue de l'Innovation",
+          "ville": "Nice",
+          "code_postal": "06000"
         },
-        {
-            "nom": "new event",
-            "date": "2025-11-03",
-            "lieu": "133 bd lafayette",
-            "id": 7
+        "gouts_musicals": ["rock", "jazz"],
+        "interets": ["expositions", "photographie"],
+        "historique_evenements": [
+          { "id_evenement": 105, "nom_evenement": "Exposition Photographique", "date": "2023-08-10" }
+        ],
+        "bio": "Photographe passionné, Pierre aime les concerts de rock et les expositions d'art.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 7,
+        "nom": "Lucie Moreau",
+        "age": 29,
+        "adresse": {
+          "rue": "56 avenue de la République",
+          "ville": "Strasbourg",
+          "code_postal": "67000"
         },
-        {
-            "nom": "a",
-            "date": "2025-02-02",
-            "lieu": "qefqwefqwefw",
-            "id": 8
+        "gouts_musicals": ["classique", "blues"],
+        "interets": ["cinéma", "lecture"],
+        "historique_evenements": [
+          { "id_evenement": 106, "nom_evenement": "Concert de Musique Classique", "date": "2023-09-20" }
+        ],
+        "bio": "Lucie est une grande amoureuse de la musique classique et des films.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 8,
+        "nom": "Thomas Girard",
+        "age": 27,
+        "adresse": {
+          "rue": "10 rue de la Liberté",
+          "ville": "Lille",
+          "code_postal": "59000"
         },
-        {
-            "nom": "fjghbh",
-            "date": "2025-02-02",
-            "lieu": "fegeg",
-            "id": 9
+        "gouts_musicals": ["rock", "pop"],
+        "interets": ["sports", "voyages"],
+        "historique_evenements": [
+          { "id_evenement": 107, "nom_evenement": "Festival de Musique", "date": "2023-08-15" }
+        ],
+        "bio": "Thomas est fan de rock et aime voyager à travers le monde.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 9,
+        "nom": "Emma Lefevre",
+        "age": 21,
+        "adresse": {
+          "rue": "75 boulevard de la Gare",
+          "ville": "Rennes",
+          "code_postal": "35000"
         },
-        {
-            "nom": "bjhd f",
-            "date": "0025-02-02",
-            "lieu": "dfdgwg",
-            "id": 10
-        }
+        "gouts_musicals": ["hip-hop", "pop"],
+        "interets": ["mode", "festivals"],
+        "historique_evenements": [],
+        "bio": "Emma adore les festivals de mode et la musique hip-hop.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 10,
+        "nom": "Victor Martin",
+        "age": 33,
+        "adresse": {
+          "rue": "34 rue de l'Hôtel de Ville",
+          "ville": "Nantes",
+          "code_postal": "44000"
+        },
+        "gouts_musicals": ["classique", "rock"],
+        "interets": ["cuisine", "jardinage"],
+        "historique_evenements": [],
+        "bio": "Victor aime cuisiner et profiter de concerts classiques.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 11,
+        "nom": "Chloé Morel",
+        "age": 26,
+        "adresse": {
+          "rue": "12 avenue des Arts",
+          "ville": "Montpellier",
+          "code_postal": "34000"
+        },
+        "gouts_musicals": ["pop", "rap"],
+        "interets": ["danse", "voyages"],
+        "historique_evenements": [
+          { "id_evenement": 108, "nom_evenement": "Concert de Pop", "date": "2023-09-25" }
+        ],
+        "bio": "Chloé adore la danse et les concerts de pop.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 12,
+        "nom": "Gabriel Petit",
+        "age": 31,
+        "adresse": {
+          "rue": "45 rue du Moulin",
+          "ville": "Lille",
+          "code_postal": "59000"
+        },
+        "gouts_musicals": ["jazz", "blues"],
+        "interets": ["photographie", "voyages"],
+        "historique_evenements": [
+          { "id_evenement": 109, "nom_evenement": "Concert de Jazz", "date": "2023-10-01" }
+        ],
+        "bio": "Gabriel est passionné de jazz et aime photographier des paysages.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 13,
+        "nom": "Alice Simon",
+        "age": 29,
+        "adresse": {
+          "rue": "33 rue de la Mer",
+          "ville": "Marseille",
+          "code_postal": "13007"
+        },
+        "gouts_musicals": ["rock", "folk"],
+        "interets": ["randonnée", "musique"],
+        "historique_evenements": [
+          { "id_evenement": 110, "nom_evenement": "Festival de Folk", "date": "2023-08-28" }
+        ],
+        "bio": "Alice aime faire de la randonnée et écouter de la musique folk.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 14,
+        "nom": "Maxime Renaud",
+        "age": 27,
+        "adresse": {
+          "rue": "22 avenue du Parc",
+          "ville": "Toulouse",
+          "code_postal": "31000"
+        },
+        "gouts_musicals": ["électro", "pop"],
+        "interets": ["sorties", "musique"],
+        "historique_evenements": [],
+        "bio": "Maxime adore sortir avec ses amis et écouter de la musique électro.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 15,
+        "nom": "Isabelle Girard",
+        "age": 34,
+        "adresse": {
+          "rue": "65 rue de l'Université",
+          "ville": "Strasbourg",
+          "code_postal": "67000"
+        },
+        "gouts_musicals": ["classique", "jazz"],
+        "interets": ["théâtre", "musique"],
+        "historique_evenements": [
+          { "id_evenement": 111, "nom_evenement": "Concert de Jazz", "date": "2023-09-30" }
+        ],
+        "bio": "Isabelle apprécie les concerts de musique classique et le théâtre.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 16,
+        "nom": "Jules Dupuis",
+        "age": 23,
+        "adresse": {
+          "rue": "8 rue du Port",
+          "ville": "Lyon",
+          "code_postal": "69002"
+        },
+        "gouts_musicals": ["hip-hop", "pop"],
+        "interets": ["mode", "danse"],
+        "historique_evenements": [],
+        "bio": "Jules aime la danse et les concerts de hip-hop.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 17,
+        "nom": "Sarah Bernard",
+        "age": 28,
+        "adresse": {
+          "rue": "17 rue de la République",
+          "ville": "Paris",
+          "code_postal": "75003"
+        },
+        "gouts_musicals": ["rock", "jazz"],
+        "interets": ["cinéma", "voyages"],
+        "historique_evenements": [
+          { "id_evenement": 112, "nom_evenement": "Concert de Rock", "date": "2023-10-10" }
+        ],
+        "bio": "Sarah adore aller au cinéma et écouter des concerts de rock.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 18,
+        "nom": "Antoine Lefevre",
+        "age": 32,
+        "adresse": {
+          "rue": "4 rue des Alpes",
+          "ville": "Nice",
+          "code_postal": "06000"
+        },
+        "gouts_musicals": ["électro", "classique"],
+        "interets": ["sports", "voyages"],
+        "historique_evenements": [
+          { "id_evenement": 113, "nom_evenement": "Festival Électro", "date": "2023-07-25" }
+        ],
+        "bio": "Antoine aime les concerts électro et le sport.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 19,
+        "nom": "Camille Dubois",
+        "age": 26,
+        "adresse": {
+          "rue": "99 rue des Écoles",
+          "ville": "Montpellier",
+          "code_postal": "34000"
+        },
+        "gouts_musicals": ["folk", "pop"],
+        "interets": ["culture", "musique"],
+        "historique_evenements": [],
+        "bio": "Camille adore la musique folk et les activités culturelles.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 20,
+        "nom": "François Petit",
+        "age": 29,
+        "adresse": {
+          "rue": "44 rue de la Liberté",
+          "ville": "Strasbourg",
+          "code_postal": "67000"
+        },
+        "gouts_musicals": ["classique", "rock"],
+        "interets": ["musique", "expositions"],
+        "historique_evenements": [
+          { "id_evenement": 114, "nom_evenement": "Concert de Classique", "date": "2023-09-12" }
+        ],
+        "bio": "François est passionné par la musique classique et les expositions d'art.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 21,
+        "nom": "Lucie Bernard",
+        "age": 27,
+        "adresse": {
+          "rue": "3 avenue des Champs-Élysées",
+          "ville": "Paris",
+          "code_postal": "75008"
+        },
+        "gouts_musicals": ["jazz", "rap"],
+        "interets": ["théâtre", "sorties"],
+        "historique_evenements": [],
+        "bio": "Lucie aime le théâtre et les concerts de jazz.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 22,
+        "nom": "Raphaël Simon",
+        "age": 33,
+        "adresse": {
+          "rue": "12 rue de la Gare",
+          "ville": "Lille",
+          "code_postal": "59000"
+        },
+        "gouts_musicals": ["rock", "pop"],
+        "interets": ["sports", "voyages"],
+        "historique_evenements": [],
+        "bio": "Raphaël adore voyager et assister à des concerts de rock.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 23,
+        "nom": "Emma Renaud",
+        "age": 31,
+        "adresse": {
+          "rue": "67 avenue de la République",
+          "ville": "Nantes",
+          "code_postal": "44000"
+        },
+        "gouts_musicals": ["pop", "electro"],
+        "interets": ["sorties", "culture"],
+        "historique_evenements": [
+          { "id_evenement": 115, "nom_evenement": "Festival de Musique", "date": "2023-10-05" }
+        ],
+        "bio": "Emma aime les festivals de musique et sortir avec ses amis.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 24,
+        "nom": "Léo Moreau",
+        "age": 26,
+        "adresse": {
+          "rue": "90 rue du Pré",
+          "ville": "Bordeaux",
+          "code_postal": "33000"
+        },
+        "gouts_musicals": ["classique", "blues"],
+        "interets": ["musique", "expositions"],
+        "historique_evenements": [
+          { "id_evenement": 116, "nom_evenement": "Concert de Blues", "date": "2023-10-12" }
+        ],
+        "bio": "Léo est passionné de musique et aime découvrir de nouveaux artistes.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 25,
+        "nom": "Alice Lefevre",
+        "age": 29,
+        "adresse": {
+          "rue": "15 rue de la Mer",
+          "ville": "Marseille",
+          "code_postal": "13006"
+        },
+        "gouts_musicals": ["rock", "electro"],
+        "interets": ["sorties", "danse"],
+        "historique_evenements": [],
+        "bio": "Alice adore sortir et écouter de la musique électro.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 26,
+        "nom": "Nicolas Dubois",
+        "age": 30,
+        "adresse": {
+          "rue": "28 avenue de la Paix",
+          "ville": "Lyon",
+          "code_postal": "69003"
+        },
+        "gouts_musicals": ["jazz", "pop"],
+        "interets": ["culture", "voyages"],
+        "historique_evenements": [],
+        "bio": "Nicolas aime la culture et la musique.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 27,
+        "nom": "Chloé Renaud",
+        "age": 24,
+        "adresse": {
+          "rue": "20 rue des Fleurs",
+          "ville": "Toulouse",
+          "code_postal": "31000"
+        },
+        "gouts_musicals": ["electro", "classique"],
+        "interets": ["concerts", "théâtre"],
+        "historique_evenements": [],
+        "bio": "Chloé adore les concerts électro et les pièces de théâtre.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 28,
+        "nom": "Lucas Girard",
+        "age": 32,
+        "adresse": {
+          "rue": "85 avenue du Mont-Royal",
+          "ville": "Nice",
+          "code_postal": "06000"
+        },
+        "gouts_musicals": ["rock", "blues"],
+        "interets": ["sports", "voyages"],
+        "historique_evenements": [],
+        "bio": "Lucas est un grand fan de blues et adore voyager.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 29,
+        "nom": "Émilie Bernard",
+        "age": 29,
+        "adresse": {
+          "rue": "10 avenue de la République",
+          "ville": "Strasbourg",
+          "code_postal": "67000"
+        },
+        "gouts_musicals": ["pop", "hip-hop"],
+        "interets": ["mode", "sorties"],
+        "historique_evenements": [
+          { "id_evenement": 117, "nom_evenement": "Festival de Hip-Hop", "date": "2023-08-30" }
+        ],
+        "bio": "Émilie adore la mode et la musique hip-hop.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 30,
+        "nom": "Bastien Martin",
+        "age": 30,
+        "adresse": {
+          "rue": "48 rue de l'Innovation",
+          "ville": "Bordeaux",
+          "code_postal": "33000"
+        },
+        "gouts_musicals": ["jazz", "rock"],
+        "interets": ["photographie", "culture"],
+        "historique_evenements": [
+          { "id_evenement": 118, "nom_evenement": "Concert de Jazz", "date": "2023-09-18" }
+        ],
+        "bio": "Bastien aime la musique jazz et la photographie.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 31,
+        "nom": "Manon Lefevre",
+        "age": 26,
+        "adresse": {
+          "rue": "13 avenue des Champs",
+          "ville": "Lille",
+          "code_postal": "59000"
+        },
+        "gouts_musicals": ["pop", "electro"],
+        "interets": ["concerts", "sorties"],
+        "historique_evenements": [],
+        "bio": "Manon adore les concerts pop et sortir avec ses amis.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 32,
+        "nom": "Paul Dupuis",
+        "age": 28,
+        "adresse": {
+          "rue": "1 rue de l'Hôpital",
+          "ville": "Rennes",
+          "code_postal": "35000"
+        },
+        "gouts_musicals": ["jazz", "classique"],
+        "interets": ["culture", "voyages"],
+        "historique_evenements": [
+          { "id_evenement": 119, "nom_evenement": "Concert de Classique", "date": "2023-10-15" }
+        ],
+        "bio": "Paul est passionné par la musique classique et aime voyager.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 33,
+        "nom": "Sarah Lefevre",
+        "age": 29,
+        "adresse": {
+          "rue": "89 rue de la Mer",
+          "ville": "Toulouse",
+          "code_postal": "31000"
+        },
+        "gouts_musicals": ["rock", "jazz"],
+        "interets": ["cinéma", "théâtre"],
+        "historique_evenements": [],
+        "bio": "Sarah aime les films et la musique rock.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 34,
+        "nom": "Julien Bernard",
+        "age": 31,
+        "adresse": {
+          "rue": "27 avenue de la Paix",
+          "ville": "Lyon",
+          "code_postal": "69001"
+        },
+        "gouts_musicals": ["pop", "blues"],
+        "interets": ["sorties", "concerts"],
+        "historique_evenements": [],
+        "bio": "Julien aime sortir et assister à des concerts de blues.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 35,
+        "nom": "Élodie Renaud",
+        "age": 22,
+        "adresse": {
+          "rue": "34 rue des Fleurs",
+          "ville": "Paris",
+          "code_postal": "75006"
+        },
+        "gouts_musicals": ["électro", "hip-hop"],
+        "interets": ["mode", "musique"],
+        "historique_evenements": [],
+        "bio": "Élodie est passionnée de mode et adore la musique électro.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 36,
+        "nom": "Lucas Dubois",
+        "age": 26,
+        "adresse": {
+          "rue": "15 avenue des Écoles",
+          "ville": "Nantes",
+          "code_postal": "44000"
+        },
+        "gouts_musicals": ["rock", "folk"],
+        "interets": ["randonnée", "voyages"],
+        "historique_evenements": [],
+        "bio": "Lucas aime la randonnée et la musique folk.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 37,
+        "nom": "Claire Petit",
+        "age": 30,
+        "adresse": {
+          "rue": "22 boulevard de la Gare",
+          "ville": "Bordeaux",
+          "code_postal": "33000"
+        },
+        "gouts_musicals": ["jazz", "pop"],
+        "interets": ["cinéma", "expositions"],
+        "historique_evenements": [
+          { "id_evenement": 120, "nom_evenement": "Festival de Jazz", "date": "2023-09-22" }
+        ],
+        "bio": "Claire adore le jazz et le cinéma.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 38,
+        "nom": "Sophie Martin",
+        "age": 29,
+        "adresse": {
+          "rue": "90 rue de la Liberté",
+          "ville": "Nice",
+          "code_postal": "06000"
+        },
+        "gouts_musicals": ["rock", "classique"],
+        "interets": ["théâtre", "culture"],
+        "historique_evenements": [],
+        "bio": "Sophie est passionnée par la culture et le théâtre.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 39,
+        "nom": "Marc Renaud",
+        "age": 35,
+        "adresse": {
+          "rue": "45 avenue de la Mer",
+          "ville": "Marseille",
+          "code_postal": "13001"
+        },
+        "gouts_musicals": ["jazz", "rock"],
+        "interets": ["expositions", "voyages"],
+        "historique_evenements": [],
+        "bio": "Marc aime découvrir de nouvelles expositions.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 40,
+        "nom": "Céline Dubois",
+        "age": 32,
+        "adresse": {
+          "rue": "77 avenue des Champs-Élysées",
+          "ville": "Lille",
+          "code_postal": "59000"
+        },
+        "gouts_musicals": ["pop", "electro"],
+        "interets": ["mode", "sorties"],
+        "historique_evenements": [],
+        "bio": "Céline adore la mode et les concerts électro.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 41,
+        "nom": "Julien Martin",
+        "age": 27,
+        "adresse": {
+          "rue": "11 avenue de la Liberté",
+          "ville": "Toulouse",
+          "code_postal": "31000"
+        },
+        "gouts_musicals": ["rock", "classique"],
+        "interets": ["cinéma", "sorties"],
+        "historique_evenements": [
+          { "id_evenement": 121, "nom_evenement": "Concert de Rock", "date": "2023-09-29" }
+        ],
+        "bio": "Julien adore les concerts de rock et les sorties.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 42,
+        "nom": "Benoît Lefevre",
+        "age": 30,
+        "adresse": {
+          "rue": "33 rue des Lilas",
+          "ville": "Nantes",
+          "code_postal": "44000"
+        },
+        "gouts_musicals": ["jazz", "rock"],
+        "interets": ["voyages", "culture"],
+        "historique_evenements": [],
+        "bio": "Benoît adore voyager et écouter du jazz.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 43,
+        "nom": "Margaux Bernard",
+        "age": 26,
+        "adresse": {
+          "rue": "57 avenue de l'Europe",
+          "ville": "Strasbourg",
+          "code_postal": "67000"
+        },
+        "gouts_musicals": ["pop", "hip-hop"],
+        "interets": ["sorties", "mode"],
+        "historique_evenements": [
+          { "id_evenement": 122, "nom_evenement": "Festival de Hip-Hop", "date": "2023-08-31" }
+        ],
+        "bio": "Margaux aime la mode et la musique hip-hop.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 44,
+        "nom": "Victor Dubois",
+        "age": 29,
+        "adresse": {
+          "rue": "88 rue de l'Avenir",
+          "ville": "Lille",
+          "code_postal": "59000"
+        },
+        "gouts_musicals": ["rock", "blues"],
+        "interets": ["cinéma", "concerts"],
+        "historique_evenements": [],
+        "bio": "Victor est passionné par le cinéma et la musique blues.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 45,
+        "nom": "Catherine Lefevre",
+        "age": 30,
+        "adresse": {
+          "rue": "50 rue de l'Innovation",
+          "ville": "Rennes",
+          "code_postal": "35000"
+        },
+        "gouts_musicals": ["classique", "jazz"],
+        "interets": ["musique", "culture"],
+        "historique_evenements": [
+          { "id_evenement": 123, "nom_evenement": "Concert de Jazz", "date": "2023-09-25" }
+        ],
+        "bio": "Catherine adore la musique classique et le jazz.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 46,
+        "nom": "Mélanie Martin",
+        "age": 22,
+        "adresse": {
+          "rue": "25 rue de la Mer",
+          "ville": "Toulouse",
+          "code_postal": "31000"
+        },
+        "gouts_musicals": ["pop", "electro"],
+        "interets": ["sorties", "musique"],
+        "historique_evenements": [],
+        "bio": "Mélanie aime la musique électro et sortir avec ses amis.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 47,
+        "nom": "Théo Petit",
+        "age": 29,
+        "adresse": {
+          "rue": "6 rue des Acacias",
+          "ville": "Nice",
+          "code_postal": "06000"
+        },
+        "gouts_musicals": ["jazz", "rock"],
+        "interets": ["voyages", "musique"],
+        "historique_evenements": [],
+        "bio": "Théo adore la musique jazz et les voyages.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 48,
+        "nom": "Louise Dubois",
+        "age": 34,
+        "adresse": {
+          "rue": "73 avenue de la Liberté",
+          "ville": "Marseille",
+          "code_postal": "13001"
+        },
+        "gouts_musicals": ["electro", "folk"],
+        "interets": ["culture", "concerts"],
+        "historique_evenements": [],
+        "bio": "Louise aime découvrir de nouveaux artistes et la musique folk.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 49,
+        "nom": "Simon Bernard",
+        "age": 28,
+        "adresse": {
+          "rue": "41 avenue du Mont-Royal",
+          "ville": "Nice",
+          "code_postal": "06000"
+        },
+        "gouts_musicals": ["rock", "pop"],
+        "interets": ["sport", "musique"],
+        "historique_evenements": [],
+        "bio": "Simon adore la musique rock et le sport.",
+        "preference_langue": "Français"
+      },
+      {
+        "id": 50,
+        "nom": "Juliette Lefevre",
+        "age": 25,
+        "adresse": {
+          "rue": "14 rue de l'Amitié",
+          "ville": "Lille",
+          "code_postal": "59000"
+        },
+        "gouts_musicals": ["classique", "jazz"],
+        "interets": ["musique", "théâtre"],
+        "historique_evenements": [
+          { "id_evenement": 124, "nom_evenement": "Concert de Jazz", "date": "2023-09-10" }
+        ],
+        "bio": "Juliette adore les concerts de jazz et le théâtre.",
+        "preference_langue": "Français"
+      }
     ]
 }
+  
+  
+

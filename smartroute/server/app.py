@@ -102,5 +102,63 @@ def create_evenement():
     except json.JSONDecodeError:
         return jsonify({'error': 'Erreur lors du traitement des données JSON'}), 500
 
+# Route to get all users
+@app.route('/api/users', methods=['GET'])
+def get_users():
+    data = load_data()
+    if "error" in data:
+        return jsonify(data), 500
+    return jsonify(data.get('users', []))
+
+# Route to get user by ID
+@app.route('/api/users/<int:id>', methods=['GET'])
+def get_user_by_id(id):
+    data = load_data()
+    if "error" in data:
+        return jsonify(data), 500
+    users = data.get('users', [])
+    user = next((user for user in users if user['id'] == id), None)
+    if user:
+        return jsonify(user)
+    return jsonify({'error': 'Utilisateur non trouvé'}), 404
+
+# Route to suggest events for a user
+@app.route('/api/suggest_events/<int:user_id>', methods=['GET'])
+def suggest_events(user_id):
+    data = load_data()
+    if "error" in data:
+        return jsonify(data), 500
+    
+    users = data.get('users', [])
+    user = next((u for u in users if u['id'] == user_id), None)
+    if user is None:
+        return jsonify({'error': 'Utilisateur non trouvé'}), 404
+
+    suggested_events = []
+    
+    # Simple suggestion logic
+    for event in data['evenements']:
+        score = 0
+        
+        # Check interests
+        if any(tag in event['tags'] for tag in user['interets']):
+            score += 2
+        
+        # Check historical events
+        if any(hist['id_evenement'] == event['id'] for hist in user['historique_evenements']):
+            score += 1
+
+        if score > 0:
+            suggested_events.append({**event, 'score': score})
+    
+    # Sort events by score
+    suggested_events.sort(key=lambda x: x['score'], reverse=True)
+    
+    # If no suggested events, return all events
+    if not suggested_events:
+        return jsonify(data['evenements']), 200  # Return all events if none are suggested
+
+    return jsonify(suggested_events), 200
+
 if __name__ == '__main__':
     app.run(debug=True)
